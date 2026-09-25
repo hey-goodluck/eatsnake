@@ -18,6 +18,6 @@ int main()
 		system("cls");
 		
     }
-	printf("ÓÎÏ·½áÊø");
+	printf("game over");
 	return 0;
 }

@@ -18,5 +18,6 @@ int main()
 		system("cls");
 		
     }
+	printf("ÓÎÏ·½áÊø")
 	return 0;
 }

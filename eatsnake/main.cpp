@@ -18,6 +18,6 @@ int main()
 		system("cls");
 		
     }
-	printf("游戏结束")
+	printf("游戏结束");
 	return 0;
 }

@@ -11,6 +11,7 @@ extern c  fruit;
 extern int lengthoftail;
 extern int end;
 extern char direction;
+extern int score ;
 void start();
 void move();
 void logic();

@@ -19,6 +19,9 @@ void move()
 		case'd':
 			newdirection='d';
 			break;
+		case'x':
+			end = 0;
+			break;
 		}
 		
 	}

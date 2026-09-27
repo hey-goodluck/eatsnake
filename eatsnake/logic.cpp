@@ -3,7 +3,7 @@
 void logic()
 {
 
-	int previousX, previousY;
+	int previousX=snakehand.x, previousY=snakehand.y;
 	if (lengthoftail > 0)
 	{previousX =  tail.x[lengthoftail - 1];
 	 previousY =  tail.y[lengthoftail - 1];
@@ -24,13 +24,19 @@ void logic()
 		 tail.y[lengthoftail - 1] = previousY;
 		 fruit.x = rand() % (length_x-1)+1;
 		 fruit.y = rand() % (length_y-1)+1;
-		for(int a=0;a<lengthoftail;a++)
-			if ( fruit.x ==  tail.x[a] &&  fruit.y == tail.y[a])
-			{
-				 fruit.x = rand() % (length_x - 1) + 1;
-				 fruit.y = rand() % (length_y - 1) + 1;
-			} 
-	}
+		 score++;
+		 while (1)
+		 {
+			 int flag = 0;
+			 for (int a = 0;a < lengthoftail;a++)
+				 if (fruit.x == tail.x[a] && fruit.y == tail.y[a])
+					 flag = 1;
+			 if (flag == 0)
+				 break;
+			 fruit.x = rand() % (length_x - 1) + 1;
+			 fruit.y = rand() % (length_y - 1) + 1;
+		 }
+		}
 
 
 

@@ -29,16 +29,16 @@ void move()
 	switch(direction)
 	{
 	case'w':
-		snakehand_y--;
+		snakehand.y--;
 		break;
 	case's':
-		snakehand_y++;
+		snakehand.y++;
 		break;
 	case'a':
-		snakehand_x--;
+		snakehand.x--;
 		break;
 	case'd':
-		snakehand_x++;
+		snakehand.x++;
 		break;
 	}
 

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f71d1f6c-2909-4f7e-97d1-be3e3e3cccc0}</ProjectGuid>
-    <RootNamespace>eateatsnake</RootNamespace>
+    <ProjectGuid>{ba3d98cd-da81-4edd-9bf7-b19504c48755}</ProjectGuid>
+    <RootNamespace>eatsnake</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,14 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="logic.cpp" />
-    <ClCompile Include="move.cpp" />
-    <ClCompile Include="print.cpp" />
-    <ClCompile Include="start.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\logic.cpp" />
+    <ClCompile Include="..\..\..\main.cpp" />
+    <ClCompile Include="..\..\..\move.cpp" />
+    <ClCompile Include="..\..\..\print.cpp" />
+    <ClCompile Include="..\..\..\start.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="snake.h" />
+    <ClInclude Include="..\..\..\snake.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,19 +20,19 @@ void print()
 				printf("#\n");
 				isprintf = 0;
 			}
-			else if (x == struct snakehand.x && y == struct snakehand.y)
+			else if (x ==  snakehand.x && y ==  snakehand.y)
 			{
 				printf("0");
 				isprintf = 0;
 			}
-			else if (x == struct fruit.x && y == struct fruit.y)
+			else if (x ==  fruit.x && y ==  fruit.y)
 			{
 				printf("f");
 				isprintf = 0;
 			}
 				for (i = 0;i < lengthoftail;i++)
 			{
-				if (x == struct tail.x[i] && y == struct tail.y[i])
+				if (x ==	 tail.x[i] && y ==	 tail.y[i])
 				{
 					printf("o");
 					isprintf = 0;

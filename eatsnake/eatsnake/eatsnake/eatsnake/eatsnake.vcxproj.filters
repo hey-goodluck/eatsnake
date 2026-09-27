@@ -15,25 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="print.cpp">
+    <ClCompile Include="..\..\..\logic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="move.cpp">
+    <ClCompile Include="..\..\..\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="start.cpp">
+    <ClCompile Include="..\..\..\move.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="logic.cpp">
+    <ClCompile Include="..\..\..\print.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\..\..\start.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="snake.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\..\..\snake.h">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

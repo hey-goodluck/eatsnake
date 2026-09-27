@@ -1,9 +1,9 @@
 #include"snake.h"
 #include<stdio.h>
 #include<Windows.h>
-struct{ int x;int y; } snakehand;
-struct{ int x[maxlengthoftail] = {0};int y[maxlengthoftail] = {0}; }tail;
-struct{ int x; int y; } fruit;
+ a  snakehand;
+ b  tail;
+ c  fruit;
  int lengthoftail = 0;
  int end = 1;
  char direction = 'd';

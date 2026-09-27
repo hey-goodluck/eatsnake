@@ -5,42 +5,42 @@ void logic()
 
 	int previousX, previousY;
 	if (lengthoftail > 0)
-	{previousX = tail.x[lengthoftail - 1];
-	 previousY = tail.y[lengthoftail - 1];
+	{previousX = struct tail.x[lengthoftail - 1];
+	 previousY = struct tail.y[lengthoftail - 1];
 		for (int a = lengthoftail - 1;a > 0;a--)
 		{
-			tail.x[a] = tail.x[a - 1];
-			tail.y[a] = tail.y[a - 1];
+			struct tail.x[a] = struct tail.x[a - 1];
+			struct tail.y[a] = struct tail.y[a - 1];
 
 		}
 	}
-	tail.x[0] = snakehand.x;
-	tail.y[0] = snakehand.y;
+	struct tail.x[0] = struct snakehand.x;
+	struct tail.y[0] = struct snakehand.y;
 	move();
-	if (snakehand.x == fruit.x && snakehand.y == fruit.y)
+	if (snakehand.x == struct fruit.x && snakehand.y == struct fruit.y)
 	{
 		lengthoftail++;
-		tail.x[lengthoftail - 1] = previousX;
-		tail.y[lengthoftail - 1] = previousY;
-		fruit.x = rand() % (length_x-1)+1;
-		fruit.y = rand() % (length_y-1)+1;
+		struct tail.x[lengthoftail - 1] = previousX;
+		struct tail.y[lengthoftail - 1] = previousY;
+		struct fruit.x = rand() % (length_x-1)+1;
+		struct fruit.y = rand() % (length_y-1)+1;
 		for(int a=0;a<lengthoftail;a++)
-			if (fruit.x == tail.x[a] && fruit.y == tail.y[a])
+			if (struct fruit.x == struct tail.x[a] && struct fruit.y == struct tail.y[a])
 			{
-				fruit.x = rand() % (length_x - 1) + 1;
-				fruit.y = rand() % (length_y - 1) + 1;
+				struct fruit.x = rand() % (length_x - 1) + 1;
+				struct fruit.y = rand() % (length_y - 1) + 1;
 			} 
 	}
 
 
 
-	if (snakehand.x == length_x || snakehand.x == 0 || snakehand.y == length_y || snakehand.y == 0)
+	if ( struct snakehand.x == length_x || struct snakehand.x == 0 || struct snakehand.y == length_y || struct snakehand.y == 0)
 		end = 0;
 	if (lengthoftail > 0)
 	{
 		for (int a = lengthoftail - 1;a >= 0;a--)
 		{
-			if (snakehand.x == tail.x[a] && snakehand.y == tail.y[a])
+			if (struct snakehand.x == struct tail.x[a] && struct snakehand.y == struct tail.y[a])
 				end = 0;
 		}
 	}

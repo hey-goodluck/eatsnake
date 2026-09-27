@@ -2,26 +2,31 @@
 #include"snake.h"
 void move()
 {
+	char newdirection=direction;
 	if (_kbhit())
 	{
 		switch ((_getch()))
 		{
 		case'w':
-			direction='w';
+			newdirection='w';
 			break;
 		case's':
-			direction='s';
+			newdirection='s';
 			break;
 		case'a':
-			direction='a';
+			newdirection='a';
 			break;
 		case'd':
-			direction='d';
+			newdirection='d';
 			break;
 		}
 		
 	}
-	switch (direction)
+	
+	if (!((direction=='a'&&newdirection=='d')||( direction=='d'&&newdirection == 'a')||
+		(direction=='s'&&newdirection =='w')||(direction == 'w'&&newdirection == 's')))
+		direction = newdirection;
+	switch(direction)
 	{
 	case'w':
 		snakehand_y--;

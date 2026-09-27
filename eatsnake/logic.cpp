@@ -6,11 +6,14 @@ void logic()
 	int previousX, previousY;
 	previousX = tail_x[lengthoftail - 1];
 	previousY = tail_y[lengthoftail - 1];
-	for (int a = lengthoftail - 1;a > 0;a--)
+	if (lengthoftail > 0)
 	{
-		tail_x[a] = tail_x[a - 1];
-		tail_y[a] = tail_y[a - 1];
+		for (int a = lengthoftail - 1;a > 0;a--)
+		{
+			tail_x[a] = tail_x[a - 1];
+			tail_y[a] = tail_y[a - 1];
 
+		}
 	}
 	tail_x[0] = snakehand_x;
 	tail_y[0] = snakehand_y;

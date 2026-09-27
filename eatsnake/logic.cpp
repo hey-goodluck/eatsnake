@@ -4,10 +4,9 @@ void logic()
 {
 
 	int previousX, previousY;
-	previousX = tail_x[lengthoftail - 1];
-	previousY = tail_y[lengthoftail - 1];
 	if (lengthoftail > 0)
-	{
+	{previousX = tail_x[lengthoftail - 1];
+	 previousY = tail_y[lengthoftail - 1];
 		for (int a = lengthoftail - 1;a > 0;a--)
 		{
 			tail_x[a] = tail_x[a - 1];
@@ -25,6 +24,12 @@ void logic()
 		tail_y[lengthoftail - 1] = previousY;
 		fruit_x = rand() % (length_x-1)+1;
 		fruit_y = rand() % (length_y-1)+1;
+		for(int a=0;a<lengthoftail;a++)
+			if (fruit_x == tail_x[a] && fruit_y == tail_y[a])
+			{
+				fruit_x = rand() % (length_x - 1) + 1;
+				fruit_y = rand() % (length_y - 1) + 1;
+			} 
 	}
 
 

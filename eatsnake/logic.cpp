@@ -5,42 +5,42 @@ void logic()
 
 	int previousX, previousY;
 	if (lengthoftail > 0)
-	{previousX = tail_x[lengthoftail - 1];
-	 previousY = tail_y[lengthoftail - 1];
+	{previousX = tail.x[lengthoftail - 1];
+	 previousY = tail.y[lengthoftail - 1];
 		for (int a = lengthoftail - 1;a > 0;a--)
 		{
-			tail_x[a] = tail_x[a - 1];
-			tail_y[a] = tail_y[a - 1];
+			tail.x[a] = tail.x[a - 1];
+			tail.y[a] = tail.y[a - 1];
 
 		}
 	}
-	tail_x[0] = snakehand_x;
-	tail_y[0] = snakehand_y;
+	tail.x[0] = snakehand.x;
+	tail.y[0] = snakehand.y;
 	move();
-	if (snakehand_x == fruit_x && snakehand_y == fruit_y)
+	if (snakehand.x == fruit.x && snakehand.y == fruit.y)
 	{
 		lengthoftail++;
-		tail_x[lengthoftail - 1] = previousX;
-		tail_y[lengthoftail - 1] = previousY;
-		fruit_x = rand() % (length_x-1)+1;
-		fruit_y = rand() % (length_y-1)+1;
+		tail.x[lengthoftail - 1] = previousX;
+		tail.y[lengthoftail - 1] = previousY;
+		fruit.x = rand() % (length_x-1)+1;
+		fruit.y = rand() % (length_y-1)+1;
 		for(int a=0;a<lengthoftail;a++)
-			if (fruit_x == tail_x[a] && fruit_y == tail_y[a])
+			if (fruit.x == tail.x[a] && fruit.y == tail.y[a])
 			{
-				fruit_x = rand() % (length_x - 1) + 1;
-				fruit_y = rand() % (length_y - 1) + 1;
+				fruit.x = rand() % (length_x - 1) + 1;
+				fruit.y = rand() % (length_y - 1) + 1;
 			} 
 	}
 
 
 
-	if (snakehand_x == length_x || snakehand_x == 0 || snakehand_y == length_y || snakehand_y == 0)
+	if (snakehand.x == length_x || snakehand.x == 0 || snakehand.y == length_y || snakehand.y == 0)
 		end = 0;
 	if (lengthoftail > 0)
 	{
 		for (int a = lengthoftail - 1;a >= 0;a--)
 		{
-			if (snakehand_x == tail_x[a] && snakehand_y == tail_y[a])
+			if (snakehand.x == tail.x[a] && snakehand.y == tail.y[a])
 				end = 0;
 		}
 	}

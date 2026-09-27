@@ -1,9 +1,10 @@
 #include"snake.h"
 #include<stdio.h>
 #include<Windows.h>
-int snakehand_x, snakehand_y;
-int tail_x[maxlengthoftail] = { 0 }, tail_y[maxlengthoftail] = { 0 };
-int fruit_x, fruit_y;
+structure
+{ int x, y } snakehand;
+structure{int x[maxlengthoftail]={0},y[maxlengthoftail]={0}} tail;
+structure{int x, y} fruit;
  int lengthoftail = 0;
  int end = 1;
  char direction = 'd';

@@ -25,17 +25,7 @@ void logic()
 		 fruit.x = rand() % (length_x-1)+1;
 		 fruit.y = rand() % (length_y-1)+1;
 		 score++;
-		 while (1)
-		 {
-			 int flag = 0;
-			 for (int a = 0;a < lengthoftail;a++)
-				 if (fruit.x == tail.x[a] && fruit.y == tail.y[a])
-					 flag = 1;
-			 if (flag == 0)
-				 break;
-			 fruit.x = rand() % (length_x - 1) + 1;
-			 fruit.y = rand() % (length_y - 1) + 1;
-		 }
+		 makefruit();
 		}
 
 

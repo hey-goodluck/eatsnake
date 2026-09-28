@@ -15,25 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\logic.cpp">
+    <ClCompile Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\furit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\main.cpp">
+    <ClCompile Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\logic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\move.cpp">
+    <ClCompile Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\print.cpp">
+    <ClCompile Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\move.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\start.cpp">
+    <ClCompile Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\print.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\start.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\snake.h">
-      <Filter>源文件</Filter>
+    <ClInclude Include="..\..\eatsnake\eatsnake\eatsnake\eatsnake\snake.h">
+      <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="score.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

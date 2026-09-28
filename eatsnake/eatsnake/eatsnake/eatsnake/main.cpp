@@ -22,7 +22,7 @@ int main()
 		
     }
 	printf("game over,score: %d\n", score);
-	fp = fopen("score.txt", "r");
+	fp = fopen("score.txt", "a+");
 	if (fp == NULL)
 	{
 		printf("Error opening file!\n");

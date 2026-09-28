@@ -16,5 +16,6 @@ void start();
 void move();
 void logic();
 void print();
+void makefruit();
 //hello
 

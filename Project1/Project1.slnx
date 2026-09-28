@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="eatsnake/eatsnake.vcxproj" Id="ba3d98cd-da81-4edd-9bf7-b19504c48755" />
+  <Project Path="Project1/Project1.vcxproj" Id="abf9c282-4497-407c-90c3-85a2d99573a9" />
 </Solution>
